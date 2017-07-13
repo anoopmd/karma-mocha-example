@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+
+  <!-- Testing Libs-->  
+  <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
+  <script src="node_modules/mocha/mocha.js"></script>
+  <script src="node_modules/chai/chai.js"></script>
+</head>
+
+<body>
+  <div id="mocha"></div>
+
+  <!-- src files-->
+  <script src="src/index.js"></script>
+
+  <!-- mocha setup -->
+  <script>mocha.setup('bdd')</script>
+
+  <!-- test files-->  
+  <script src="spec/index.spec.js"></script>
+
+  <script>
+    mocha.run();
+  </script>
+</body>
